@@ -1,0 +1,187 @@
+
+
+
+<head>
+  <link href="map.css" rel="stylesheet" type="text/css"/>
+</head>
+
+
+<body>
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="map.html">map</a>
+  </div>
+<section>
+  <img src="assets/img/peta.png" style="width:100%; height: 100%;">
+
+
+<!-- this section is for the dropdown button buttons -->
+
+
+<!-- NEGERI SEMBILAN -->
+  <div class="dropdown">
+      <button class="popup-button"></button>
+      <div class="dropdown-content">
+        <a onclick="showPopup('JURUKUR PRESTIJ')">JURUKUR PRESTIJ</a>
+        <a onclick="showPopup('JURUKUR ILTIZAM')">JURUKUR ILTIZAM</a>
+        <a onclick="showPopup('JURUKUR MOKHTAR KASSIM')">JURUKUR MOKHTAR KASSIM</a>
+        <a onclick="showPopup('PERKASA GEOMATICS SDN.BHD')">PERKASA GEOMATICS SDN.BHD</a> 
+        <a onclick="showPopup('SM SURVEY CONSULTANT')">SM SURVEY CONSULTANT</a> 
+      </div>
+  </div>
+  <div class="dropdown1">
+      <button class="popup-button"></button>
+      <div class="dropdown-content1">
+        <a onclick="showPopup('MAP2U SDN BHD')">MAP2U SDN BHD</a>
+      </div>
+    </div>
+<!-- NEGERI SEMBILAN -->
+<!-- MELAKA -->
+    <div class="dropdown2">
+  <button class="popup-button"></button>
+  <div class="dropdown-content2">
+    <a onclick="showPopup('JURUKUR DINAR')">JURUKUR DINAR</a>
+  </div>
+</div>
+<div class="dropdown3">
+  <button class="popup-button"></button>
+  <div class="dropdown-content3">
+    <a onclick="showPopup('JURUKUR PRESTIJ ')">JURUKUR PRESTIJ</a>
+    <a onclick="showPopup('JABATAN UKUR DAN PEMETAAN MELAKA')">JABATAN UKUR DAN PEMETAAN MELAKA</a>
+  </div>
+</div>
+<div class="dropdown4">
+  <button class="popup-button"></button>
+  <div class="dropdown-content4">
+    <a onclick="showPopup('ARCHWAY MAPPING SERVICES SDN BHD')">ARCHWAY MAPPING SERVICES SDN BHD</a>
+    <a onclick="showPopup('JURUKUR KUMPULAN UKUR PETANAH (LS) SDN BHD')">JURUKUR KUMPULAN UKUR PETANAH (LS) SDN BHD</a>
+  </div>
+</div>
+<div class="dropdown5">
+  <button class="popup-button"></button>
+  <div class="dropdown-content5">
+    <a onclick="showPopup('JURUKUR FH GEOSPATIAL')">JURUKUR FH GEOSPATIAL</a>
+  </div>
+</div>
+<!-- MELAKA -->
+<!-- JOHOR -->
+<div class="dropdown6">
+  <button class="popup-button"></button>
+  <div class="dropdown-content6">
+    <a onclick="showPopup('M&R ARCHITECTS SDN BHD')">M&R ARCHITECTS SDN BHD</a>
+  </div>
+</div>
+<div class="dropdown7">
+  <button class="popup-button"></button>
+  <div class="dropdown-content7">
+    <a onclick="showPopup('JURUKUR DAMAI')">JURUKUR DAMAI</a>
+  </div>
+</div>
+<div class="dropdown8">
+  <button class="popup-button"></button>
+  <div class="dropdown-content8">
+    <a onclick="showPopup('JURUKUR INOVASI')">JURUKUR INOVASI</a>
+    <a onclick="showPopup('JURUKUR T&T SDN. BHD')">JURUKUR T&T SDN. BHD</a>
+    <a onclick="showPopup('GEOSURVEY MAPPING SDN. BHD')">GEOSURVEY MAPPING SDN. BHDM</a>
+    <a onclick="showPopup('PEJABAT TANAH BATU PAHAT')">PEJABAT TANAH BATU PAHAT</a>
+  </div>
+</div>
+<div class="dropdown9">
+  <button class="popup-button"></button>
+  <div class="dropdown-content9">
+    <a onclick="showPopup('JURUKUR SELATAN AHR SDN BHD')">JURUKUR SELATAN AHR SDN BHD</a>
+    <a onclick="showPopup('MAHABOB & CO')">MAHABOB & CO</a>
+    <a onclick="showPopup('JURUKUR AUFA')">JURUKUR AUFA</a>
+  </div>
+</div>
+<div class="dropdown10">
+  <button class="popup-button"></button>
+  <div class="dropdown-content10">
+    <a onclick="showPopup('JURUKUR MEGAH JAYA')">JURUKUR MEGAH JAYA</a>
+    <a onclick="showPopup('JURUKUR ABADI')">JURUKUR ABADI</a>
+    <a onclick="showPopup('JURUKUR KAMARUL ARIFFIN')">JURUKUR KAMARUL ARIFFIN</a>
+  </div>
+</div>
+<!-- JOHOR -->
+<!-- end of dropdown section-->
+
+    <div class="popup" id="popup">
+      <div class="popup-header">
+        <span id="popup-title"></span>
+        <span class="popup-close" onclick="closePopup()">x</span>
+      </div>
+      <div class="popup-body" id="popup-body">
+      </div>
+    </div>
+    <script>
+      function showPopup(option) {
+        // Set the popup title
+        document.getElementById("popup-title").innerHTML = option;
+
+        // Section Negeri Sembilan
+        if (option === "JURUKUR PRESTIJ") {
+          document.getElementById("popup-body").innerHTML = "NO 188, JALAN LAVENDER HEIGHTS 5,LAVENDER HEIGHT,70400,SEREMBAN,NEGERI SEMBILAN, <br><br> SKOP KERJA: <br>  a. tiada maklumat";
+        } else if (option === "JURUKUR ILTIZAM") {
+          document.getElementById("popup-body").innerHTML = " NO.31-A, JALAN BUNGA RAYA 8, SENAWANG BUSINESS CENTRE,TAMAN TASIK JAYA,70400,SEREMBAN,NEGERI SEMBILAN,<br><br>SKOP KERJA:<br> a. ukur sempadan<br> b. survey drone";
+        } else if (option === "JURUKUR MOKHTAR KASSIM") {
+          document.getElementById("popup-body").innerHTML = "98-2, JALAN TAMAN KOMERSIAL SENAWANG 4,TAMAN KOMERSIAL SENAWANG,70450,SEREMBAN,NEGERI SEMBILAN,<br><br>SKOP KERJA:<br> a.tiada maklumat ";
+        } else if (option === "PERKASA GEOMATICS SDN.BHD") {
+          document.getElementById("popup-body").innerHTML = "NO.31-A, JALAN BUNGA RAYA 8, SENAWANG BUSINESS CENTRE,TAMAN TASIK JAYA,70400,SEREMBAN,NEGERI SEMBILAN,<br><br>SKOP KERJA:<br> a. ukur sempadan<br> b. survey drone";
+        } else if (option === "SM SURVEY CONSULTANT") {
+          document.getElementById("popup-body").innerHTML = " NO. 31-2, TINGKAT 2, JALAN FOREST HEIGHTS 7,SEREMBAN FOREST HEIGHTS,70450,SEREMBAN,NEGERI SEMBILAN,<br><br>SKOP KERJA:<br> a. ukur kadaster <br>b. ukur strata<br>c. ukur stratum<br>d. ukur kejuruteraan<br>e. ukur topografi <br>f. ukur hidrografi <br>g. gps<br> h. pemetaan utiliti bawah tanah";
+        } else if (option === "MAP2U SDN BHD") {
+          document.getElementById("popup-body").innerHTML = "  PT 9951, JALAN BBN 1/3K,BANDAR BARU NILAI,71800,NILAI,NEGERI SEMBILAN,<br><br>SKOP KERJA:<br> a. total station & gps mapping<br>b. digital cartography<br>c. remote sensing<br> d. photogrammetry<br>e. scanning, plotting & printing services";
+        }
+
+        //Section Melaka
+        else if (option === "ARCHWAY MAPPING SERVICES SDN BHD") {
+          document.getElementById("popup-body").innerHTML = "NO 48 JALAN TU 39 A,TAMAN TASEK UTAMA,75450,AYER KEROH,MELAKA,<br><br> SKOP KERJA:<br>a. ukur kejuruteraan <br>b. 3d laser scanning & terrestial laser scanning (TLS)<br>c. gis";
+        } else if (option === "JURUKUR DINAR") {
+          document.getElementById("popup-body").innerHTML = "TGKT 1 PS 1017,TAMAN CAHAYA PULAU SEBANG,73000,POS TAMPIN,MELAKA,<br><br>SKOP KERJA:<br>a. tiada maklumat";
+        } else if (option === "JURUKUR FH GEOSPATIAL") {
+          document.getElementById("popup-body").innerHTML = "JC 2643-1, BLOK E1, JALAN PB 2,PLAZZA BESTARI, BANDAR JASIN BESTARI AYER PANAS,77000,JASIN,MELAKA,<br><br>SKOP KERJA:<br>a. pengukuran hakmilik tanah & hakmilik strata<br>b. ukur kejuruteraan<br>c. ukur hidrografi<br>d. ukur fotogrametri<br>e. gis";
+        } else if (option === "JURUKUR PRESTIJ ") {
+          document.getElementById("popup-body").innerHTML = "NO. 39-1, JALAN TU 49A,TAMAN TASIK UTAMA,75450,MELAKA,MELAKA,<br><br>SKOP KERJA:<br>a. tiada maklumat";
+        } else if (option === "JABATAN UKUR DAN PEMETAAN MELAKA") {
+          document.getElementById("popup-body").innerHTML = "JALAN TAMING SARI,,KAMPUNG DURIAN DAUN DALAM,75400,MELAKA,MELAKA,<br><br>SKOP KERJA:<br>a. ukur kadaster<br>b. pemetaan<br>c. geodetik<br>d. ukur persempadanan";
+        } else if (option === "JURUKUR KUMPULAN UKUR PETANAH (LS) SDN BHD") {
+          document.getElementById("popup-body").innerHTML = "NO.4942-E, 1ST & 2ND FLOOR,JALAN KASTURI 2, TAMAN KASTURI, SEMABOK,75050,MELAKA,MELAKA,<br><br>SKOP KERJA:<br>a. tiada maklumat";
+        } 
+
+        //Section Johor
+        else if (option === "M&R ARCHITECTS SDN BHD") {
+          document.getElementById("popup-body").innerHTML = "NO.7 & 7A, JALAN HARMONI 12,,TAMAN DESA SKUDAI,81300,SKUDAI,JOHOR,<br><br>SKOP KERJA:<br>a. FEASIBILITY <br>b. DESIGN SOLUTIONS<br>c. PRODUCTION INFORMATION<br>d. PROJECT MANAGEMENT & SERVICES<br>e. PRESENTATION:";
+        } else if (option === "GEOSURVEY MAPPING SDN. BHD") {
+          document.getElementById("popup-body").innerHTML = "NO 24A, JALAN KENCANA 1A/22,TAMAN PUTRA KENCANA,<br>83300 SRI GADING,JOHOR<br><br>SKOP KERJA:<br>a. Ukur Tanah<br>b. Pecah bahagian<br>c. Pecah Sempadan<br>d. Ubah Syarat<br>e. Permohonan Tanah";
+        } else if (option === "JURUKUR T&T SDN. BHD") {
+          document.getElementById("popup-body").innerHTML = "13, JALAN TIMAH HITAM, KG KENANGAN DATO ONN, 83000, BATU PAHAT, JOHOR,<br><br>SKOP KERJA:<br>a. Subdivision / Partition of lot.<br>b. Amalgamation of lots.<br>c. Locating boundary marks.<br>d. Strata title survey.<br>e. Land acquisition.";
+        } else if (option === "JURUKUR INOVASI") {
+          document.getElementById("popup-body").innerHTML = "NO. 42, JALAN TIMAH SARL, KAMPUNG KENANGAN DATO' ONN, 83000 BATU PAHAT,JOHOR<br><br>SKOP KERJA:<br>a. tiada maklumat";
+        } else if (option === "PEJABAT TANAH BATU PAHAT") {
+          document.getElementById("popup-body").innerHTML = "BANGUNAN TUNKU MAHKOTA IBRAHIM ISMAIL,JALAN BAKAU CHONDONG,83000,BATU PAHAT,JOHOR,<br><br>SKOP KERJA:<br>a. tiada maklumat";
+        } else if (option === "JURUKUR SELATAN AHR SDN BHD") {
+          document.getElementById("popup-body").innerHTML = "NO. 95A, JALAN EMAS 1, TAMAN SRI SKUDAI, 81300, SKUDAI, JOHOR,<br><br>SKOP KERJA:<br>a. Ukur Sempadan Tanah.<br>b. Ubahsyarat.<br>c. Pecah Bahagian tanah.";
+        } else if (option === "JURUKUR AUFA") {
+          document.getElementById("popup-body").innerHTML = "NO. 59A, JALAN UDA UTAMA 3/14, BANDAR UDA UTAMA, 81200 JOHOR BAHRU, JOHOR<br><br>SKOP KERJA:<br>a. Surveying<br>b. Utility Mapping<br>c. Aerial photo<br>d.Hydrography Survey<br>e.Strata Application<br>f.Land Consultancy<br>";
+        } else if (option === "JURUKUR MEGAH JAYA") {
+          document.getElementById("popup-body").innerHTML = "NO.5, JALAN SEJAHTERA 11, TAMAN DESA SKUDAI, 81300, SKUDAI, JOHOR,<br><br>SKOP KERJA:<br>a. tiada maklumat";
+        } else if (option === "MAHABOB & CO") {
+          document.getElementById("popup-body").innerHTML = "NO.33 JALAN INANG 1, TAMAN SKUDAI, 81300, JOHOR BAHRU, JOHOR,<br><br>SKOP KERJA:<br>a. Cadastral Surveying (Pecah Bahagian, Pecah Sempadan).<br>b. Topography Survey.<br>c. Engineering Survey.<br>d. Terrestrial Laser Scanning.<br>e. As-Built Survey.<br>f. Utility Mapping.<br>g. Unmanned Aerial System (UAS) Mapping.<br>h. Hydrographic Survey.<br>i. Geographical Information System (GIS).";
+        } else if (option === "JURUKUR DAMAI") {
+          document.getElementById("popup-body").innerHTML = "73-01, JALAN ROSMERAH 2/2,TAMAN JOHOR JAYA,81100,JOHOR BAHRU,JOHOR,<br><br>SKOP KERJA:<br>a. tiada maklumat";
+        } else if (option === "JURUKUR ABADI") {
+          document.getElementById("popup-body").innerHTML = "NO. 6-01, JALAN PADI EMAS 4/5,PUSAT BANDAR TAMPOI,81200,JOHOR BAHRU,JOHOR,<br><br>SKOP KERJA:<br>a. tiada maklumat";
+        } else if (option === "JURUKUR KAMARUL ARIFFIN") {
+          document.getElementById("popup-body").innerHTML = "NO.129, JALAN RAWA,TAMAN PERLING,81200,JOHOR BAHRU,JOHOR,<br><br>SKOP KERJA:<br>a. tiada maklumat";
+        }
+        // Show the popup
+        document.getElementById("popup").style.display = "block";
+      }
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+
+</section>
+
+</body>
